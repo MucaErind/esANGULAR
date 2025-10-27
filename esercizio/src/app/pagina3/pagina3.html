@@ -1,0 +1,8 @@
+<p>Lista Studenti</p>
+
+<app-visualizza-studente
+ *ngFor="let s of studenti"
+ [nome]="s.nome"
+ [classe] = "s.classe"
+ [mediaVoti] = "s.mediaVoti">
+</app-visualizza-studente>
