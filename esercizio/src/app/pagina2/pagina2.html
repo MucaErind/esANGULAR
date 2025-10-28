@@ -1,1 +1,14 @@
-<p>pagina2 works!</p>
+<h2>Aggiungi Studente</h2>
+
+<form (ngSubmit)="aggiungi()">
+  <label>Nome:</label>
+  <input type="text" [(ngModel)]="nome" name="nome" required />
+
+  <label>Classe:</label>
+  <input type="text" [(ngModel)]="classe" name="classe" required />
+
+  <label>Media voti:</label>
+  <input type="number" [(ngModel)]="mediaVoti" name="mediaVoti" required />
+
+  <button type="submit">Aggiungi</button>
+</form>
